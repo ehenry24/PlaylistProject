@@ -38,7 +38,23 @@ public class Playlist {
     }
 
     public void likeSong(int position){
-        
+        playlist.get(position).like();
+    }
+
+    public void removeSong(int position) {
+        playlist.remove(position);
+    }
+
+    
+
+
+
+
+
+
+
+    public String toString(){
+        return playlist.toString();
     }
 
 

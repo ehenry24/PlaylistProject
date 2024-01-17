@@ -44,17 +44,17 @@ public class Song {
 
     String likeStatus = " ";
     public void like(){
-        if(liked == true){
-            likeStatus = " -- liked";
+        liked = true;
+        likeStatus = " -- liked";
         }
-    }
 
     public String toString(){
         return "Song name: "+name+", Artist name: "+artist+", Duration: "+duration+" "+likeStatus;
     }
-
-
-
-
-
 }
+
+
+
+
+
+
