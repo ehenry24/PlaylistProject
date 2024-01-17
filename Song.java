@@ -8,6 +8,7 @@ public class Song {
     private String name;
     private String artist;
     private double duration;
+    private boolean liked;
 
 
 
@@ -19,6 +20,7 @@ public class Song {
         name = myName;
         artist = myArtist;
         duration = myDuration;
+        liked = false;
     }
 
      /**
@@ -40,7 +42,19 @@ public class Song {
         return duration;
     }
 
-    public String toString(){
-        return "Song name: "+name+", Artist name: "+artist+", Duration: "+duration;
+    String likeStatus = " ";
+    public void like(){
+        if(liked == true){
+            likeStatus = " -- liked";
+        }
     }
+
+    public String toString(){
+        return "Song name: "+name+", Artist name: "+artist+", Duration: "+duration+" "+likeStatus;
+    }
+
+
+
+
+
 }
