@@ -52,12 +52,16 @@ public class Playlist {
         return liked;
     }
 
-    public double totalDuration(){
-        double total = 0;
+    public String totalDuration(){
+        int totalmin = 0;
+        int totalsec = 0;
         for(int i = 0; i < playlist.size(); i++){
-            total += playlist.get(i).getDuration();
+            totalmin += playlist.get(i).getMinutes();
+            totalsec += playlist.get(i).getSeconds();
         }
-        return total;
+        totalmin += totalsec/60;
+        totalsec = totalsec % 60;
+        return totalmin +":"+ totalsec;
     }
 
     public void removeUnlikedSongs(){
