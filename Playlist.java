@@ -45,27 +45,36 @@ public class Playlist {
         playlist.remove(position);
     }
 
-    
+    public ArrayList<Song> likedSongs(){
+        ArrayList<Song> liked = new ArrayList<Song>();
+        for(int i = 0; i<playlist.size();i++){
+            if(playlist.get(i).likeStatus.equals("-- liked")){
+                Song n = playlist.get(i);
+                liked.add(n);
+            }
+        }
+        return liked;
+    }
 
+    public double totalDuration(){
+        double total = 0;
+        for(int i = 0; i < playlist.size(); i++){
+            total += playlist.get(i).getDuration();
+        }
+        return total;
+    }
 
-
-
-
-
+    public void removeUnlikedSongs(){
+        for(int i=0; i<playlist.size(); i++){
+            if(playlist.get(i).likeStatus.equals(" ")){
+                playlist.remove(i);
+                i--;
+            }
+        }
+    }
 
     public String toString(){
         return playlist.toString();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    }
+}
