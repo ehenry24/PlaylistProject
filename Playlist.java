@@ -11,8 +11,6 @@ public class Playlist {
      */
     private ArrayList<Song> playlist;
 
-
-
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
@@ -20,8 +18,6 @@ public class Playlist {
     public Playlist(){
         playlist = new ArrayList<Song>();
     }
-
-      
 
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
