@@ -10,6 +10,7 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
+        Playlist CCLplaylist = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
         /**
@@ -17,7 +18,11 @@ public class PlaylistTester {
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
-
+        CCLplaylist.addSong(new Song("Boyfriend", "Justin Bieber", 51, 2));
+        CCLplaylist.addSong(new Song("Nikes", "Frank Ocean", 14, 5));
+        CCLplaylist.addSong(new Song("NASA", "Ariana Grande", 3, 3));
+        CCLplaylist.addSong(new Song("FTCU", "Nicki Minaj", 52, 2));
+        CCLplaylist.addSong(new Song("Deli", "Ice Spice", 7,2));
 
 
         System.out.println("Printing the songs...\n");
