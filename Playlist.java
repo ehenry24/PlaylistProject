@@ -11,8 +11,6 @@ public class Playlist {
      */
     private ArrayList<Song> playlist;
 
-
-
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
@@ -20,8 +18,6 @@ public class Playlist {
     public Playlist(){
         playlist = new ArrayList<Song>();
     }
-
-      
 
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
@@ -56,12 +52,16 @@ public class Playlist {
         return liked;
     }
 
-    public double totalDuration(){
-        double total = 0;
+    public String totalDuration(){
+        int totalmin = 0;
+        int totalsec = 0;
         for(int i = 0; i < playlist.size(); i++){
-            total += playlist.get(i).getDuration();
+            totalmin += playlist.get(i).getMinutes();
+            totalsec += playlist.get(i).getSeconds();
         }
-        return total;
+        totalmin += totalsec/60;
+        totalsec = totalsec % 60;
+        return totalmin +":"+ totalsec;
     }
 
     public void removeUnlikedSongs(){
