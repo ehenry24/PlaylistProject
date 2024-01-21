@@ -1,7 +1,7 @@
 /**
  * File for a Song class to be used in the Playlist Project
- * @author LH, CP, and CK
- * @version
+ * @author Lilie Henry, Chloe Palmer, and Claire Adkins
+ * @version 1/18/24
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
