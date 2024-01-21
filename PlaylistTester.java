@@ -20,9 +20,9 @@ public class PlaylistTester {
          */
         CCLplaylist.addSong(new Song("Boyfriend", "Justin Bieber", 51, 2));
         CCLplaylist.addSong(new Song("Nikes", "Frank Ocean", 14, 5));
-        CCLplaylist.addSong(new Song("NASA", "Ariana Grande", 3, 3));
+        CCLplaylist.addSong(new Song("NASA", "Ariana Grande", 03, 3));
         CCLplaylist.addSong(new Song("FTCU", "Nicki Minaj", 52, 2));
-        CCLplaylist.addSong(new Song("Deli", "Ice Spice", 7,2));
+        CCLplaylist.addSong(new Song("Deli", "Ice Spice", 07,2));
         CCLplaylist.addSong(new Song("Garden (Say It Like Dat)", "SZA", 28, 3));
         CCLplaylist.addSong(new Song("MAMMAMIA","Maneskin", 18, 3));
 
